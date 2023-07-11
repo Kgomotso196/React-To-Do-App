@@ -1,17 +1,16 @@
-import TodoItem from "./TodoItem";
+import TodoItem from './TodoItem';
+/* eslint-disable */
 
-const TodosList = ({ todosProps, handleChange, delTodo }) => {
-  return (
-    <ul>
-      {todosProps.map((todo) => (
-        <TodoItem
+const TodosList = ({ todosProps, handleChange, delTodo }) => (
+  <ul>
+    {todosProps.map((todo) => (
+      <TodoItem
         key={todo.id}
         itemProp={todo}
         handleChange={handleChange}
         delTodo={delTodo}
-        />
-      ))}
-    </ul>
-  );
-};
+      />
+    ))}
+  </ul>
+);
 export default TodosList;
